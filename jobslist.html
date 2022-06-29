@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Jobs Page </title>
+    <style>
+      body{
+        background-color:grey;
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Hi.Welcome to the Jobs Page......</h1>
+    <ol>
+      {% for title,company_name,jd in jobs %}
+      <li>
+        <b style="background-color:black;color:white;">{{title}}</b> ::: {{company_name}}
+        <br/>
+        {{jd}}
+      </li>
+      {% endfor %}
+    </ol>
+  </body>
+
+</html>
